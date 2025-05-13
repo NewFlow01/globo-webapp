@@ -39,7 +39,7 @@ variable "api_key" {
 
 variable "tfe_organization" {
   type        = string
-  description = "(Required) name of tfc org"
+  description = "(Required) name of tfc org-1"
 }
 
 variable "tfe_workspace_name" {

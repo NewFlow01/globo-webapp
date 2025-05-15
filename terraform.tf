@@ -1,11 +1,4 @@
 terraform {
-  cloud {
-    organization = "deep-dive-tf-course-sa"
-
-    workspaces {
-      name = "web-app-dev"
-    }
-  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"

@@ -37,14 +37,24 @@ variable "api_key" {
   description = "(Required) API key for web app to talk to SaaS platform."
 }
 
-variable "public_subnets" {
-  type        = list(string)
-  description = "(Required) List of subnet IDs for EC2 instance deployments."
+variable "tfe_organization" {
+  type        = string
+  description = "(Required) name of tfc org-1"
 }
 
-variable "vpc_id" {
+variable "tfe_workspace_name" {
   type        = string
-  description = "(Required) VPC ID of VPC for application deployment."
+  description = "(Required) name of networking workspace to get information."
 }
+
+# variable "public_subnets" {
+#   type        = list(string)
+#   description = "(Required) List of subnet IDs for EC2 instance deployments."
+# }
+
+# variable "vpc_id" {
+#   type        = string
+#   description = "(Required) VPC ID of VPC for application deployment."
+# }
 
 

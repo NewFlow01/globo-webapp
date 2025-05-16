@@ -47,6 +47,21 @@ variable "tfe_workspace_name" {
   description = "(Required) name of networking workspace to get information."
 }
 
+variable "ec2_role_name" {
+  type        = string
+  description = "(Required) role name for ec2 instance profile"
+}
+
+variable "api_key_secret_id" {
+  type        = string
+  description = "(Required) Secret id for the api key"
+}
+
+variable "playbook_repository" {
+  type        = string
+  description = "(Required) URL of Ansible playbook repository."
+}
+
 # variable "public_subnets" {
 #   type        = list(string)
 #   description = "(Required) List of subnet IDs for EC2 instance deployments."

@@ -50,6 +50,7 @@ resource "aws_instance" "main" {
     "Name" = "${local.name_prefix}-webapp-${count.index}"
   })
 
+
   user_data = templatefile("${path.module}/templates/userdata.sh", {
     playbook_repository = var.playbook_repository
     secret_id           = var.api_key_secret_id
